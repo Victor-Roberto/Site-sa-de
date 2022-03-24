@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css.css" rel="stylesheet">
+    <title>Saúde já!</title>
+    <script src="IMC.js"></script>
+</head>
+
+<body>
+    
+
+    <header>
+
+        <img src="banner.png" width="auto" height="auto">
+        
+    </header>
+
+    <div>
+
+    <h4>Cadastre-se!</h4>
+
+    <form name="meu_form">
+
+        
+        
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nomeid" placeholder="Tiago Vale" required="required" name="nome" />
+        <br>
+        <label for="datan">Data de nascimento</label>
+        <input type="date" id="datan" placeholder="dd/mm/aaaa" required="required" name="datan" />
+        <br>
+        <label for="sexo">Sexo</label>
+        <input type="text" id="sexo" placeholder="Masculino" required="required" name="sexo" />
+        <br>
+        <label for="cpf">CPF</label>
+        <input type="text" id="cpf" placeholder="111-111-111-11" required="required" name="cpf" />
+        <br>
+        <label for="logradouro">Logradouro</label>
+        <input type="text" id="logradouro" placeholder="Nome de sua rua" required="required" name="logradouro" />
+        <br>
+        <label for="nlogradouro">Número do logradouro</label>
+        <input type="text" id="nlogradouro" placeholder="Número de sua casa" required="required" name="nlogradouro" />
+        <br>
+        <label for="cep">CEP</label>
+        <input type="text" id="cep" placeholder="11111-111" name="cep" />
+        <br>
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" placeholder="Insira o nome de sua cidade" name="cidade" />
+        <br>
+        <label for="uf">UF</label>
+        <input type="text" id="uf" placeholder="Insira seu Estado" name="cidade" />
+        <br>
+      
+        <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+      </form>
+
+    </div>
+
+    <style> 
+
+        #leftbox {
+            float:left; 
+            
+            width:25%;
+            height:280px;
+            }
+        #middlebox{
+            float:left; 
+            width:50%;
+            height:280px;
+            }
+        #rightbox{
+            float:right;
+            ;
+            width:25%;
+            height:280px;
+            }
+    </style>
+
+    <div id="leftbox">
+
+        <h1>O que é IMC ?</h1>
+        <p>O IMC (ou índice de massa corporal) é um cálculo simples que permite avaliar se a pessoa 
+            está dentro do peso que é considerado ideal para a sua altura.</p>
+
+    </div>
+
+    <div class="container" id="middlebox">
+        <h2>Cálculo de IMC</h2>
+  
+        <p>Altura (em CM)</p>
+  
+        <input type="text" id="altura">
+  
+        <p>Peso (em KG)</p>
+  
+        <input type="text" id="peso">
+        <br>
+        <button id="btn">Calcular</button>
+  
+        <div id="result"></div>
+       
+    </div>
+
+    <div id="rightbox">
+
+        <table border="1">
+            <style>
+
+            tbody > tr:nth-child(2n) { 
+
+            background-color:lightgrey;
+
+            }
+
+            </style>
+
+
+            <tr>
+                <td>IMC</td>
+                <td>Classificação</td>
+                <td>Obesidade(Grau)</td>
+            </tr>
+
+            <tr>
+                <td>Menor que 18,5</td>
+                <td>Magreza</td>
+                <td>0</td>
+            </tr>
+
+            <tr>
+                <td>Entre 18,5 e 24,9</td>
+                <td>Normal</td>
+                <td>0</td>
+            </tr>
+
+            <tr>
+                <td>Entre 25,0 e 29,9</td>
+                <td>Sobrepeso</td>
+                <td>I</td>
+            </tr>
+
+            <tr>
+                <td>Entre 30,0 e 39,9</td>
+                <td>Obesidade</td>
+                <td>II</td>
+            </tr>
+
+            <tr>
+                <td>Maior que 40</td>
+                <td>Obesidade grave</td>
+                <td>III</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div>
+
+        <h5>Sobre nós:</h5>
+        <p><strong>Visão da empresa:</strong> Ser referência na prestação de serviços de saúde e informação.</p>
+        <p><strong>Nossa missão:</strong> Oferecer serviços e informações referentes a saúde de nossos clientes 
+        para que os mesmos possam buscar um estilo de vida melhor e mais saudável.</p>
+        <p><strong>Nossos valores:</strong> Atuar com consciência e responsabilidade na relação com pacientes,
+        profissionais e fornecedores. Estabelecer relacionamentos abertos, transparentes e apoiados na confiança mútua.
+        Desenvolver e apoiar programas voltados para a prevenção de doenças.</p>
+
+    </div>
+
+    <h3>Nossa localização:</h3>
+
+    <div class="mapinha">
+        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.261825487201!2d-46.78320504989824!3d-23.666592984555283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce53af46420527%3A0xeb99ed9009f47af6!2sUNASP%20SP!5e0!3m2!1spt-BR!2sbr!4v1647960820449!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+    
+</body>
+</html>
