@@ -20,14 +20,13 @@
 
     <div>
 
-    <h4>Cadastre-se!</h4>
+    <h4><span>Cadastre-se!</span></h4>
 
     <form name="meu_form">
 
         
-        
         <label for="nome">Nome completo</label>
-        <input type="text" id="nomeid" placeholder="Tiago Vale" required="required" name="nome" />
+        <input type="text" id="nomeid" placeholder="Victor Dias" required="required" name="nome" />
         <br>
         <label for="datan">Data de nascimento</label>
         <input type="date" id="datan" placeholder="dd/mm/aaaa" required="required" name="datan" />
@@ -36,22 +35,22 @@
         <input type="text" id="sexo" placeholder="Masculino" required="required" name="sexo" />
         <br>
         <label for="cpf">CPF</label>
-        <input type="text" id="cpf" placeholder="111-111-111-11" required="required" name="cpf" />
+        <input type="number" id="cpf" placeholder="111-111-111-11" required="required" name="cpf" />
         <br>
         <label for="logradouro">Logradouro</label>
         <input type="text" id="logradouro" placeholder="Nome de sua rua" required="required" name="logradouro" />
         <br>
         <label for="nlogradouro">Número do logradouro</label>
-        <input type="text" id="nlogradouro" placeholder="Número de sua casa" required="required" name="nlogradouro" />
+        <input type="number" id="nlogradouro" placeholder="Número de sua casa" required="required" name="nlogradouro" />
         <br>
         <label for="cep">CEP</label>
-        <input type="text" id="cep" placeholder="11111-111" name="cep" />
+        <input type="number" id="cep" placeholder="11111-111" name="cep" />
         <br>
         <label for="cidade">Cidade</label>
         <input type="text" id="cidade" placeholder="Insira o nome de sua cidade" name="cidade" />
         <br>
         <label for="uf">UF</label>
-        <input type="text" id="uf" placeholder="Insira seu Estado" name="cidade" />
+        <input type="text" id="uf" placeholder="Insira a sigla do seu Estado" name="cidade" />
         <br>
       
         <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
@@ -74,22 +73,21 @@
             }
         #rightbox{
             float:right;
-            ;
             width:25%;
             height:280px;
             }
     </style>
 
-    <div id="leftbox">
-
-        <h1>O que é IMC ?</h1>
+    <div id="leftbox" style = "position:relative; top:5px">
+    
+        <h1><span>O que é IMC ?</span></h1>
         <p>O IMC (ou índice de massa corporal) é um cálculo simples que permite avaliar se a pessoa 
             está dentro do peso que é considerado ideal para a sua altura.</p>
-
+            
     </div>
 
     <div class="container" id="middlebox">
-        <h2>Cálculo de IMC</h2>
+        <h2><span>Cálculo de IMC</span></h2>
   
         <p>Altura (em CM)</p>
   
@@ -102,22 +100,28 @@
         <button id="btn">Calcular</button>
   
         <div id="result"></div>
-       
+        
     </div>
 
-    <div id="rightbox">
+    <div id="rightbox" style = "position:relative; top:-48px">
+        
+        
 
         <table border="1">
             <style>
+            tbody > tr:nth-child(1n){
 
+                background-color: white;
+
+            }
             tbody > tr:nth-child(2n) { 
 
-            background-color:lightgrey;
+            background-color:#57cac3;
 
             }
 
             </style>
-
+            <h6><span>Tabela IMC</span></h6>
 
             <tr>
                 <td>IMC</td>
@@ -155,12 +159,12 @@
                 <td>III</td>
             </tr>
         </table>
-
+        
     </div>
-
-    <div>
-
-        <h5>Sobre nós:</h5>
+ 
+    <div style = "position:relative; top:200px">
+   
+        <h5><span>Sobre nós</span></h5>
         <p><strong>Visão da empresa:</strong> Ser referência na prestação de serviços de saúde e informação.</p>
         <p><strong>Nossa missão:</strong> Oferecer serviços e informações referentes a saúde de nossos clientes 
         para que os mesmos possam buscar um estilo de vida melhor e mais saudável.</p>
@@ -170,11 +174,13 @@
 
     </div>
 
-    <h3>Nossa localização:</h3>
+    
 
-    <div class="mapinha">
-        
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.261825487201!2d-46.78320504989824!3d-23.666592984555283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce53af46420527%3A0xeb99ed9009f47af6!2sUNASP%20SP!5e0!3m2!1spt-BR!2sbr!4v1647960820449!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <div class="mapinha" style = "position:relative; top:200px">
+
+            <h3><span>Nossa localização:</span></h3>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.261825487201!2d-46.78320504989824!3d-23.666592984555283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce53af46420527%3A0xeb99ed9009f47af6!2sUNASP%20SP!5e0!3m2!1spt-BR!2sbr!4v1647960820449!5m2!1spt-BR!2sbr" width="568" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
     </div>
     

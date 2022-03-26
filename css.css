@@ -14,9 +14,17 @@ header{
 }
 
 h1{
-
+   
+    text-align: center;
     font-size: xx-large;
     font-family: Arial, Helvetica, sans-serif
+
+}
+
+h1 span{
+
+    background-color:#57cac3;
+    color: white;
 
 }
 
@@ -24,34 +32,85 @@ h2{
 
     text-align: center;
     font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+h2 span{
+
+    background-color:#57cac3;
+    color: white;
 
 }
 
 h3{
 
+    margin-right: 383px;
     text-align: center;
     font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+h3 span{
+
+    background-color:#57cac3;
+    color: white;
 
 }
 
 h4{
 
+    
     text-align: center;
     font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif
 
 }
+h4 span{
+
+    background-color:#57cac3;
+    color: white;
+
+}
+
+h5{
+
+    text-align: center;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+h5 span{
+
+    background-color:#57cac3;
+    color: white;
+
+}
+
+h6{
+
+    text-align: center;
+    font-size: xx-large;
+    font-family: Arial, Helvetica, sans-serif
+
+}
+
+h6 span{
+
+background-color:#57cac3;
+color: white;
+
+}
+
 .enviar{
 
     margin-left: 140px;
 
 }
 
-h5{
 
-    font-size: xx-large;
-    font-family: Arial, Helvetica, sans-serif
-
-}
 
 .container{
 
@@ -74,7 +133,7 @@ label{
 }
    
 table{
-    
+   
     text-align: center;
     border:1px;
     border-color: black;
@@ -89,3 +148,5 @@ form{
 
 
 }
+
+
